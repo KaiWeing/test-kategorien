@@ -12,3 +12,12 @@ Können an Testklassen oder -methoden annotiert werden. Können sowohl an Integr
 
 Über die excludedGroups Konfiguration von Surefire und Failsafe sind manuelle und langsame Tests standardmäßig ausgeklammert.
 Die langsamen Tests lassen sich jedoch über das Profil -PincludeSlowTests wieder mit einbinden.
+
+## Test aus der IDE
+Die Suite UnitTests durchläuft alle Tests ohne die Annotationen. Leider aber auch den Integrationstest. 
+Gibt es eine Möglichkeit dies zu verhindern? Ein Ordnerbasierter exclude ist ggf. über DirectorySuiteBuilder aus junit-addons möglich,
+aber funktioniert dies stabil mit relativen Pfaden? Fühlt sich etwas nach Hack an.
+ 
+Ggf. besser:
+* Integrationstests bekommen zusätzlich eigenen Suffix oder eigenes Package, oder
+* Integrationstest liegen in separatem Projekt
