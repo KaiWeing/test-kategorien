@@ -10,7 +10,7 @@ import org.junit.experimental.categories.Category;
 /**
  * @author KAW
  */
-public class IntegrationsTest {
+public class HelloServiceIT {
 
     @Rule
     public PrintTestnameRule rule = new PrintTestnameRule();

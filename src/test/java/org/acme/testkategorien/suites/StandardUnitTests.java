@@ -6,10 +6,10 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
 /**
- * @author KAW
+ * Alle Unittests, ohne die manuellen
  */
 @RunWith(Categories.class)
-@Suite.SuiteClasses({AllTests.class})
+@Suite.SuiteClasses({AllUnitTests.class})
 @Categories.ExcludeCategory({ManuellerTest.class})
-public class UnitTests {
+public class StandardUnitTests {
 }

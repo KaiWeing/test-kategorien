@@ -4,10 +4,9 @@ import org.junit.extensions.cpsuite.ClasspathSuite;
 import org.junit.runner.RunWith;
 
 /**
- *
- * @author KAW
+ * Alle UnitTests (mit Endung *Test)
  */
-// Nimmt leider auch den Integrationstest mit
 @RunWith(ClasspathSuite.class)
-public class AllTests {
+@ClasspathSuite.ClassnameFilters(".*Test")
+public class AllUnitTests {
 }

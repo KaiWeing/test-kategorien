@@ -24,20 +24,6 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-<!--
-        <dependency>
-            <groupId>com.googlecode.junit-toolbox</groupId>
-            <artifactId>junit-toolbox</artifactId>
-            <version>1.9</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>junit-addons</groupId>
-            <artifactId>junit-addons</artifactId>
-            <version>1.4</version>
-            <scope>test</scope>
-        </dependency>
-        -->
         <dependency>
             <groupId>io.takari.junit</groupId>
             <artifactId>takari-cpsuite</artifactId>
@@ -80,7 +66,7 @@
                 <executions>
                     <execution>
                         <id>add-it-source</id>
-                        <phase>pre-integration-test</phase>
+                        <phase>generate-test-sources</phase>
                         <goals><goal>add-test-source</goal></goals>
                         <configuration>
                             <sources>
