@@ -1,5 +1,6 @@
 package org.acme.testkategorien.suites;
 
+import org.junit.Ignore;
 import org.junit.extensions.cpsuite.ClasspathSuite;
 import org.junit.runner.RunWith;
 
@@ -8,5 +9,6 @@ import org.junit.runner.RunWith;
  */
 @RunWith(ClasspathSuite.class)
 @ClasspathSuite.ClassnameFilters(".*Test")
+@Ignore
 public class AllUnitTests {
 }

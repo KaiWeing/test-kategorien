@@ -110,6 +110,9 @@
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
+                    <excludes>
+                        <exclude>**/*ManualTest.java</exclude>
+                    </excludes>
                     <excludedGroups>${test.excludedGroups}</excludedGroups>
                 </configuration>
             </plugin>
@@ -119,6 +122,9 @@
                     <testSourceDirectory>src/it/java</testSourceDirectory>
                     <testClassesDirectory>${project.build.directory}/it-classes</testClassesDirectory>
                     <excludedGroups>${test.excludedGroups}</excludedGroups>
+                    <excludes>
+                        <exclude>**/*ManualIT.java</exclude>
+                    </excludes>
                 </configuration>
                 <executions>
                     <execution>
